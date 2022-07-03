@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 //Make sure to remove this when you upload this to Github!
-const token = "OTg0MjQ5NDI1NTkxNDMxMTg4.G6IQNq.Dxq0xeKPUrbgXYIz7aR_WtfvclhpsKFup-ixyM"
+const token = "Your bot's token"
 
 const client = new Discord.Client({
     allowedMentions: {
