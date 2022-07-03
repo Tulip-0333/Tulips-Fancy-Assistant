@@ -1,5 +1,6 @@
 # Tulips Fancy Assistant
-A Discord bot made by Tulip#0333, in alpha currently.
+A Discord bot made by Tulip#0333, in alpha currently.\n
+Do whatever you want with this code, Idrc.
 
 # How to initialize
 1. Open a command line (cmd/powershell)
