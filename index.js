@@ -1,6 +1,7 @@
+const fs = require('fs');
 const Discord = require('discord.js');
 //LEL you thought you could steal my token :))))
-const token = "TOKEN!";
+const token = "Lel :)";
 
 const client = new Discord.Client({
     allowedMentions: {
@@ -28,16 +29,10 @@ client.on('messageCreate', message => {
     if (message.content === "*help") {
         const helpembed = new Discord.MessageEmbed()
         .setTitle("Help command")
-        .setDescription("Commands: *help*, roulette, ping, invite, info")
+        .setDescription("Commands: *help*, roulette, ping, invite, info, whois")
+        //Why is this deprecated?
         .setFooter("Prefix is asterisk. Do *help (command) for help on a specific command.");
         message.channel.send({embeds:[helpembed]});
-    }
-    if (message.content === "*debug1") {
-        const advancedhelpembed = new Discord.MessageEmbed()
-        .setTitle("Debug")
-        .setDescription("You shouldn't know about this...");
-        message.channel.send(advancedhelpembed);
-        message.channel.send("`"+FileList+ "`");
     }
     if (message.content === "*help info") {
         const helpinfoembed = new Discord.MessageEmbed()
@@ -89,7 +84,7 @@ client.on('messageCreate', message => {
     if (message.content === "*whois") {
         const whoisembed = new Discord.MessageEmbed()
         .setTitle(message.author.username+"'s info")
-        .setImage(message.author.avatar)
+        .setImage(message.author.displayAvatarURL())
         .setDescription("ID: "+message.author.id);
         message.channel.send({embeds:[whoisembed]});
     }
